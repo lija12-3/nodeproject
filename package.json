@@ -1,11 +1,15 @@
 {
   "name": "hello-world",
   "version": "1.0.0",
-  "description": "A simple Node.js Hello World application",
+  "description": "A simple Node.js Hello World application with build and test",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"No tests specified\" && exit 0"
+    "start": "node index.js",
+    "build": "echo 'Building the project...'",  # Placeholder build script
+    "test": "jest"  # Assumes you are using Jest for testing
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.0.0"  # Jest for testing
+  }
 }
