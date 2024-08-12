@@ -5,15 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "tsc",  // TypeScript compilation command; replace with appropriate build command if using JavaScript
-    "test": "jest"  // Assumes Jest is used for testing
+    "build": "tsc",  
+    "test": "jest"  
   },
   "dependencies": {
-    "typescript": "^4.0.0"  // Include TypeScript if using TypeScript
+    "typescript": "^4.0.0"  
   },
   "devDependencies": {
-    "jest": "^29.0.0",  // Jest for testing
-    "@types/jest": "^29.0.0",  // Jest type definitions
-    "ts-jest": "^29.0.0"  // Jest preprocessor for TypeScript
+    "jest": "^29.0.0",  
+    "@types/jest": "^29.0.0",  
+    "ts-jest": "^29.0.0"  
   }
 }
