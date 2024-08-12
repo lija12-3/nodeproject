@@ -1,15 +1,19 @@
 {
   "name": "hello-world",
   "version": "1.0.0",
-  "description": "A simple Node.js Hello World application with build and test",
+  "description": "A simple Node.js application with build and test",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "echo 'Building the project...'",  
-    "test": "jest"  
+    "build": "tsc",  // TypeScript compilation command; replace with appropriate build command if using JavaScript
+    "test": "jest"  // Assumes Jest is used for testing
   },
-  "dependencies": {},
+  "dependencies": {
+    "typescript": "^4.0.0"  // Include TypeScript if using TypeScript
+  },
   "devDependencies": {
-    "jest": "^29.0.0"  
+    "jest": "^29.0.0",  // Jest for testing
+    "@types/jest": "^29.0.0",  // Jest type definitions
+    "ts-jest": "^29.0.0"  // Jest preprocessor for TypeScript
   }
 }
