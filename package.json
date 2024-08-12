@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "echo 'Building the project...'",  # Placeholder build script
-    "test": "jest"  # Assumes you are using Jest for testing
+    "build": "echo 'Building the project...'",  
+    "test": "jest"  
   },
   "dependencies": {},
   "devDependencies": {
-    "jest": "^29.0.0"  # Jest for testing
+    "jest": "^29.0.0"  
   }
 }
