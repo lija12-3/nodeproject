@@ -2,9 +2,9 @@
   "name": "hello-world",
   "version": "1.0.0",
   "description": "A simple Node.js application with build and test",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node app.js",
     "build": "tsc",  
     "test": "jest"  
   },
