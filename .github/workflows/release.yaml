@@ -37,7 +37,7 @@ jobs:
         run: |
           gh release create v1.0.0 ./data.txt --title "Release v1.0.0" --notes "This is the first release."
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
       - name: Upload Release Asset
         run: echo "Asset uploaded"  # The `gh release create` command already handles uploading assets
