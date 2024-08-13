@@ -34,19 +34,10 @@ jobs:
           name: data-artifact
 
       - name: Create GitHub Release
-        id: create_release
-        uses: actions/create-release@v1
-        with:
-          tag_name: v1.0.0
-          release_name: "Release v1.0.0"
-          body: "This is the first release."
-          draft: false
-          prerelease: false
+        run: |
+          gh release create v1.0.0 ./data.txt --title "Release v1.0.0" --notes "This is the first release."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: data.txt
-          asset_name: data.txt
-          asset_content_type: text/plain
+        run: echo "Asset uploaded"  # The `gh release create` command already handles uploading assets
